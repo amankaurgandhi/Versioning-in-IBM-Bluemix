@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: CSE6331-Assignment1
+  host: CSE6331-Assignment1
+  disk_quota: 1024M
+  services:
+  - Object Storage-ws
+  buildpack: python_buildpack

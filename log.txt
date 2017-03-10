@@ -1,0 +1,285 @@
+Connected, dumping recent logs for app CSE6331-Assignment1 in org amankaur.gandhi / space dev as amankaur.gandhi@mavs.uta.edu...
+
+2017-01-24T22:00:22.31-0600 [API/5]      OUT Updated app with guid 4525a4d9-06ca-4ba8-bedf-4c743e7ffbee ({"name"=>"CSE6331-Assignment1", "instances"=>1, "memory"=>128, "disk_quota"=>1024, "buildpack"=>"python_buildpack", "environment_json"=>"PRIVATE DATA HIDDEN"})
+2017-01-24T22:00:35.33-0600 [API/4]      OUT Updated app with guid 4525a4d9-06ca-4ba8-bedf-4c743e7ffbee ({"state"=>"STOPPED"})
+2017-01-24T22:00:35.33-0600 [APP/0]      OUT Exit status 143
+2017-01-24T22:00:35.33-0600 [CELL/0]     OUT Exit status 0
+2017-01-24T22:00:35.35-0600 [CELL/0]     OUT Destroying container
+2017-01-24T22:00:37.18-0600 [CELL/0]     OUT Successfully destroyed container
+2017-01-24T22:00:38.04-0600 [API/0]      OUT Updated app with guid 4525a4d9-06ca-4ba8-bedf-4c743e7ffbee ({"state"=>"STARTED"})
+2017-01-24T22:00:38.20-0600 [STG/0]      OUT Downloading python_buildpack...
+2017-01-24T22:00:38.22-0600 [STG/0]      OUT Downloaded python_buildpack
+2017-01-24T22:00:38.22-0600 [STG/0]      OUT Creating container
+2017-01-24T22:00:41.17-0600 [STG/0]      OUT Successfully created container
+2017-01-24T22:00:41.17-0600 [STG/0]      OUT Downloading app package...
+2017-01-24T22:00:41.21-0600 [STG/0]      OUT Downloaded app package (24.8K)
+2017-01-24T22:00:41.21-0600 [STG/0]      OUT Downloading build artifacts cache...
+2017-01-24T22:00:43.24-0600 [STG/0]      OUT Staging...
+2017-01-24T22:00:43.68-0600 [STG/0]      OUT -------> Buildpack version 1.5.5
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR Traceback (most recent call last):
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR   File "/tmp/buildpack/vendor/pip-pop/pip-diff", line 119, in <module>
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR     main()
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR   File "/tmp/buildpack/vendor/pip-pop/pip-diff", line 114, in main
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR     diff(**kwargs)
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR   File "/tmp/buildpack/vendor/pip-pop/pip-diff", line 86, in diff
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR     r2 = Requirements(r2)
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR   File "/tmp/buildpack/vendor/pip-pop/pip-diff", line 28, in __init__
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR     self.load(reqfile)
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR   File "/tmp/buildpack/vendor/pip-pop/pip-diff", line 39, in load
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR   File "/app/.heroku/python/lib/python2.7/site-packages/pip-8.1.1-py2.7.egg/pip/req/req_file.py", line 93, in parse_requirements
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR     for req in req_iter:
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR   File "/app/.heroku/python/lib/python2.7/site-packages/pip-8.1.1-py2.7.egg/pip/req/req_file.py", line 168, in process_line
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR   File "/app/.heroku/python/lib/python2.7/site-packages/pip-8.1.1-py2.7.egg/pip/req/req_install.py", line 136, in from_editable
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR   File "/app/.heroku/python/lib/python2.7/site-packages/pip-8.1.1-py2.7.egg/pip/req/req_install.py", line 1134, in parse_editable
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR     url_no_extras
+2017-01-24T22:00:45.86-0600 [STG/0]      ERR pip.exceptions.InstallationError: Directory '.' is not installable. File 'setup.py' not found.
+2017-01-24T22:00:45.88-0600 [STG/0]      ERR Failed to compile droplet
+2017-01-24T22:00:45.88-0600 [STG/0]      OUT Exit status 223
+2017-01-24T22:00:45.89-0600 [STG/0]      ERR Staging failed: Exited with status 223
+2017-01-24T22:00:45.91-0600 [STG/0]      OUT Destroying container
+2017-01-24T22:00:45.99-0600 [API/2]      ERR Failed to stage application: staging failed
+2017-01-24T22:00:47.76-0600 [STG/0]      OUT Successfully destroyed container
+2017-01-24T22:03:16.05-0600 [API/7]      OUT Updated app with guid 4525a4d9-06ca-4ba8-bedf-4c743e7ffbee ({"name"=>"CSE6331-Assignment1", "instances"=>1, "memory"=>128, "disk_quota"=>1024, "buildpack"=>"python_buildpack", "environment_json"=>"PRIVATE DATA HIDDEN"})
+2017-01-24T22:03:29.34-0600 [API/7]      OUT Updated app with guid 4525a4d9-06ca-4ba8-bedf-4c743e7ffbee ({"state"=>"STARTED"})
+2017-01-24T22:03:29.47-0600 [STG/0]      OUT Downloading python_buildpack...
+2017-01-24T22:03:29.53-0600 [STG/0]      OUT Creating container
+2017-01-24T22:03:34.92-0600 [STG/0]      OUT Downloading app package...
+2017-01-24T22:03:34.95-0600 [STG/0]      OUT Downloaded app package (25.7K)
+2017-01-24T22:03:34.95-0600 [STG/0]      OUT Downloading build artifacts cache...
+2017-01-24T22:03:36.91-0600 [STG/0]      OUT Downloaded build artifacts cache (29.9M)
+2017-01-24T22:03:36.91-0600 [STG/0]      OUT Staging...
+2017-01-24T22:03:37.35-0600 [STG/0]      OUT -------> Buildpack version 1.5.5
+2017-01-24T22:03:40.39-0600 [STG/0]      OUT -----> Noticed cffi. Bootstrapping libffi.
+2017-01-24T22:03:40.46-0600 [STG/0]      OUT Downloaded [file:///tmp/buildpacks/17ee7fadcce5f693e2d00f3cc44d03c7/dependencies/https___pivotal-buildpacks.s3.amazonaws.com_python_binaries_cflinuxfs2_libffi.tar.gz]
+2017-01-24T22:03:41.23-0600 [STG/0]      OUT      $ pip install -r requirements.txt
+2017-01-24T22:03:41.56-0600 [STG/0]      ERR DEPRECATION: --allow-all-external has been deprecated and will be removed in the future. Due to changes in the repository protocol, it no longer has any effect.
+2017-01-24T22:03:41.64-0600 [STG/0]      OUT        Collecting astroid==1.4.8 (from -r requirements.txt (line 1))
+2017-01-24T22:03:41.73-0600 [STG/0]      OUT          Downloading astroid-1.4.8-py2.py3-none-any.whl (213kB)
+2017-01-24T22:03:41.82-0600 [STG/0]      OUT        Collecting Babel==2.3.4 (from -r requirements.txt (line 2))
+2017-01-24T22:03:41.84-0600 [STG/0]      OUT          Downloading Babel-2.3.4-py2.py3-none-any.whl (7.1MB)
+2017-01-24T22:03:42.83-0600 [STG/0]      OUT        Collecting certifi==2017.1.23 (from -r requirements.txt (line 3))
+2017-01-24T22:03:42.87-0600 [STG/0]      OUT          Downloading certifi-2017.1.23-py2.py3-none-any.whl (382kB)
+2017-01-24T22:03:42.93-0600 [STG/0]      OUT        Collecting cffi==1.9.1 (from -r requirements.txt (line 4))
+2017-01-24T22:03:43.12-0600 [STG/0]      OUT          Downloading cffi-1.9.1-cp27-cp27m-manylinux1_x86_64.whl (389kB)
+2017-01-24T22:03:43.18-0600 [STG/0]      OUT        Collecting click==6.7 (from -r requirements.txt (line 5))
+2017-01-24T22:03:43.23-0600 [STG/0]      OUT          Downloading click-6.7-py2.py3-none-any.whl (71kB)
+2017-01-24T22:03:43.30-0600 [STG/0]      OUT          Downloading colorama-0.3.7-py2.py3-none-any.whl
+2017-01-24T22:03:43.57-0600 [STG/0]      OUT          Downloading cryptography-1.7.1.tar.gz (420kB)
+2017-01-24T22:03:44.13-0600 [STG/0]      OUT        Collecting cycler==0.10.0 (from -r requirements.txt (line 8))
+2017-01-24T22:03:44.15-0600 [STG/0]      OUT          Downloading cycler-0.10.0-py2.py3-none-any.whl
+2017-01-24T22:03:44.16-0600 [STG/0]      OUT        Collecting debtcollector==1.11.0 (from -r requirements.txt (line 9))
+2017-01-24T22:03:44.20-0600 [STG/0]      OUT          Downloading debtcollector-1.11.0-py2.py3-none-any.whl
+2017-01-24T22:03:44.22-0600 [STG/0]      OUT        Collecting decorator==4.0.10 (from -r requirements.txt (line 10))
+2017-01-24T22:03:44.26-0600 [STG/0]      OUT          Downloading decorator-4.0.10-py2.py3-none-any.whl
+2017-01-24T22:03:44.27-0600 [STG/0]      OUT        Collecting entrypoints==0.2.2 (from -r requirements.txt (line 11))
+2017-01-24T22:03:44.29-0600 [STG/0]      OUT          Downloading entrypoints-0.2.2-py2.py3-none-any.whl
+2017-01-24T22:03:44.30-0600 [STG/0]      OUT        Collecting Flask==0.12 (from -r requirements.txt (line 12))
+2017-01-24T22:03:44.32-0600 [STG/0]      OUT          Downloading Flask-0.12-py2.py3-none-any.whl (82kB)
+2017-01-24T22:03:44.35-0600 [STG/0]      OUT        Collecting graphviz==0.5.1 (from -r requirements.txt (line 13))
+2017-01-24T22:03:44.38-0600 [STG/0]      OUT          Downloading graphviz-0.5.1-py2.py3-none-any.whl
+2017-01-24T22:03:44.40-0600 [STG/0]      OUT        Collecting idna==2.2 (from -r requirements.txt (line 14))
+2017-01-24T22:03:44.42-0600 [STG/0]      OUT          Downloading idna-2.2-py2.py3-none-any.whl (55kB)
+2017-01-24T22:03:44.44-0600 [STG/0]      OUT        Collecting ipykernel==4.5.0 (from -r requirements.txt (line 15))
+2017-01-24T22:03:44.48-0600 [STG/0]      OUT          Downloading ipykernel-4.5.0-py2.py3-none-any.whl (97kB)
+2017-01-24T22:03:44.51-0600 [STG/0]      OUT        Collecting ipython==5.1.0 (from -r requirements.txt (line 16))
+2017-01-24T22:03:44.61-0600 [STG/0]      OUT          Downloading ipython-5.1.0-py2-none-any.whl (747kB)
+2017-01-24T22:03:44.77-0600 [STG/0]      OUT        Collecting ipython-genutils==0.1.0 (from -r requirements.txt (line 17))
+2017-01-24T22:03:44.81-0600 [STG/0]      OUT        Collecting ipywidgets==5.2.2 (from -r requirements.txt (line 18))
+2017-01-24T22:03:44.84-0600 [STG/0]      OUT          Downloading ipywidgets-5.2.2-py2.py3-none-any.whl (43kB)
+2017-01-24T22:03:44.87-0600 [STG/0]      OUT        Collecting iso8601==0.1.11 (from -r requirements.txt (line 19))
+2017-01-24T22:03:44.90-0600 [STG/0]      OUT          Downloading iso8601-0.1.11-py2.py3-none-any.whl
+2017-01-24T22:03:44.91-0600 [STG/0]      OUT        Collecting isort==4.2.5 (from -r requirements.txt (line 20))
+2017-01-24T22:03:44.98-0600 [STG/0]      OUT          Downloading isort-4.2.5-py2.py3-none-any.whl (40kB)
+2017-01-24T22:03:45.00-0600 [STG/0]      OUT        Collecting Jinja2==2.8 (from -r requirements.txt (line 22))
+2017-01-24T22:03:45.03-0600 [STG/0]      OUT          Downloading Jinja2-2.8-py2.py3-none-any.whl (263kB)
+2017-01-24T22:03:45.10-0600 [STG/0]      OUT          Downloading jsonschema-2.5.1-py2.py3-none-any.whl
+2017-01-24T22:03:45.13-0600 [STG/0]      OUT        Collecting jupyter==1.0.0 (from -r requirements.txt (line 24))
+2017-01-24T22:03:45.16-0600 [STG/0]      OUT        Collecting jupyter-client==4.4.0 (from -r requirements.txt (line 25))
+2017-01-24T22:03:45.19-0600 [STG/0]      OUT          Downloading jupyter_client-4.4.0-py2.py3-none-any.whl (76kB)
+2017-01-24T22:03:45.22-0600 [STG/0]      OUT        Collecting jupyter-console==5.0.0 (from -r requirements.txt (line 26))
+2017-01-24T22:03:45.24-0600 [STG/0]      OUT          Downloading jupyter_console-5.0.0-py2.py3-none-any.whl
+2017-01-24T22:03:45.27-0600 [STG/0]      OUT        Collecting jupyter-core==4.2.0 (from -r requirements.txt (line 27))
+2017-01-24T22:03:45.33-0600 [STG/0]      OUT        Collecting keystoneauth1==2.18.0 (from -r requirements.txt (line 28))
+2017-01-24T22:03:45.44-0600 [STG/0]      OUT        Collecting lazy-object-proxy==1.2.2 (from -r requirements.txt (line 29))
+2017-01-24T22:03:45.49-0600 [STG/0]      OUT          Downloading lazy_object_proxy-1.2.2-cp27-cp27m-manylinux1_x86_64.whl (56kB)
+2017-01-24T22:03:45.51-0600 [STG/0]      OUT        Collecting matplotlib==1.5.3 (from -r requirements.txt (line 31))
+2017-01-24T22:03:47.05-0600 [STG/0]      OUT          Downloading matplotlib-1.5.3-cp27-cp27m-manylinux1_x86_64.whl (13.7MB)
+2017-01-24T22:03:48.71-0600 [STG/0]      OUT        Collecting mccabe==0.5.2 (from -r requirements.txt (line 32))
+2017-01-24T22:03:48.74-0600 [STG/0]      OUT          Downloading mccabe-0.5.2-py2.py3-none-any.whl
+2017-01-24T22:03:48.75-0600 [STG/0]      OUT        Collecting mistune==0.7.3 (from -r requirements.txt (line 33))
+2017-01-24T22:03:48.78-0600 [STG/0]      OUT          Downloading mistune-0.7.3-py2.py3-none-any.whl
+2017-01-24T22:03:48.80-0600 [STG/0]      OUT        Collecting monotonic==1.2 (from -r requirements.txt (line 34))
+2017-01-24T22:03:48.82-0600 [STG/0]      OUT          Downloading monotonic-1.2-py2.py3-none-any.whl
+2017-01-24T22:03:48.87-0600 [STG/0]      OUT          Downloading msgpack-python-0.4.8.tar.gz (113kB)
+2017-01-24T22:03:49.15-0600 [STG/0]      OUT        Collecting nbconvert==4.2.0 (from -r requirements.txt (line 36))
+2017-01-24T22:03:49.17-0600 [STG/0]      OUT          Downloading nbconvert-4.2.0-py2.py3-none-any.whl (319kB)
+2017-01-24T22:03:49.25-0600 [STG/0]      OUT        Collecting nbformat==4.1.0 (from -r requirements.txt (line 37))
+2017-01-24T22:03:49.27-0600 [STG/0]      OUT          Downloading nbformat-4.1.0-py2.py3-none-any.whl (140kB)
+2017-01-24T22:03:49.37-0600 [STG/0]      OUT          Downloading netaddr-0.7.19-py2.py3-none-any.whl (1.6MB)
+2017-01-24T22:03:49.61-0600 [STG/0]      OUT          Downloading netifaces-0.10.5.tar.gz
+2017-01-24T22:03:49.87-0600 [STG/0]      OUT        Collecting nltk==3.2.1 (from -r requirements.txt (line 40))
+2017-01-24T22:03:49.93-0600 [STG/0]      OUT          Downloading nltk-3.2.1.tar.gz (1.1MB)
+2017-01-24T22:03:50.55-0600 [STG/0]      OUT        Collecting notebook==4.2.3 (from -r requirements.txt (line 41))
+2017-01-24T22:03:50.58-0600 [STG/0]      OUT          Downloading notebook-4.2.3-py2.py3-none-any.whl (6.7MB)
+2017-01-24T22:03:51.63-0600 [STG/0]      OUT        Collecting numpy==1.11.2 (from -r requirements.txt (line 42))
+2017-01-24T22:03:54.08-0600 [STG/0]      OUT          Downloading numpy-1.11.2-cp27-cp27m-manylinux1_x86_64.whl (15.3MB)
+2017-01-24T22:03:56.07-0600 [STG/0]      OUT        Collecting oslo.config==3.22.0 (from -r requirements.txt (line 43))
+2017-01-24T22:03:56.14-0600 [STG/0]      OUT          Downloading oslo.config-3.22.0-py2.py3-none-any.whl (102kB)
+2017-01-24T22:03:56.17-0600 [STG/0]      OUT        Collecting oslo.i18n==3.12.0 (from -r requirements.txt (line 44))
+2017-01-24T22:03:56.21-0600 [STG/0]      OUT          Downloading oslo.i18n-3.12.0-py2.py3-none-any.whl (41kB)
+2017-01-24T22:03:56.25-0600 [STG/0]      OUT        Collecting oslo.serialization==2.16.0 (from -r requirements.txt (line 45))
+2017-01-24T22:03:56.29-0600 [STG/0]      OUT          Downloading oslo.serialization-2.16.0-py2.py3-none-any.whl
+2017-01-24T22:03:56.32-0600 [STG/0]      OUT        Collecting oslo.utils==3.22.0 (from -r requirements.txt (line 46))
+2017-01-24T22:03:56.37-0600 [STG/0]      OUT          Downloading oslo.utils-3.22.0-py2.py3-none-any.whl (97kB)
+2017-01-24T22:03:56.41-0600 [STG/0]      OUT        Collecting pandas==0.19.1 (from -r requirements.txt (line 47))
+2017-01-24T22:03:57.67-0600 [STG/0]      OUT          Downloading pandas-0.19.1-cp27-cp27m-manylinux1_x86_64.whl (16.7MB)
+2017-01-24T22:03:59.88-0600 [STG/0]      OUT        Collecting pbr==1.10.0 (from -r requirements.txt (line 48))
+2017-01-24T22:03:59.93-0600 [STG/0]      OUT          Downloading pbr-1.10.0-py2.py3-none-any.whl (96kB)
+2017-01-24T22:03:59.97-0600 [STG/0]      OUT        Collecting pickleshare==0.7.4 (from -r requirements.txt (line 49))
+2017-01-24T22:04:00.00-0600 [STG/0]      OUT          Downloading pickleshare-0.7.4-py2.py3-none-any.whl
+2017-01-24T22:04:00.03-0600 [STG/0]      OUT          Downloading positional-1.1.1.tar.gz
+2017-01-24T22:04:01.18-0600 [STG/0]      OUT        Collecting prompt-toolkit==1.0.9 (from -r requirements.txt (line 51))
+2017-01-24T22:04:01.26-0600 [STG/0]      OUT          Downloading prompt_toolkit-1.0.9-py2-none-any.whl (241kB)
+2017-01-24T22:04:01.32-0600 [STG/0]      OUT        Collecting pyasn1==0.1.9 (from -r requirements.txt (line 52))
+2017-01-24T22:04:01.37-0600 [STG/0]      OUT          Downloading pyasn1-0.1.9-py2.py3-none-any.whl
+2017-01-24T22:04:01.40-0600 [STG/0]      OUT        Collecting pycparser==2.17 (from -r requirements.txt (line 53))
+2017-01-24T22:04:01.42-0600 [STG/0]      OUT          Downloading pycparser-2.17.tar.gz (231kB)
+2017-01-24T22:04:01.77-0600 [STG/0]      OUT        Collecting pyDes==2.0.1 (from -r requirements.txt (line 54))
+2017-01-24T22:04:01.78-0600 [STG/0]      OUT          Downloading pyDes-2.0.1.tar.gz
+2017-01-24T22:04:02.04-0600 [STG/0]      OUT        Collecting Pygments==2.1.3 (from -r requirements.txt (line 55))
+2017-01-24T22:04:02.11-0600 [STG/0]      OUT          Downloading Pygments-2.1.3-py2.py3-none-any.whl (755kB)
+2017-01-24T22:04:02.25-0600 [STG/0]      OUT        Collecting pylint==1.6.4 (from -r requirements.txt (line 56))
+2017-01-24T22:04:02.30-0600 [STG/0]      OUT          Downloading pylint-1.6.4-py2.py3-none-any.whl (569kB)
+2017-01-24T22:04:02.54-0600 [STG/0]      OUT        Collecting pyOpenSSL==16.2.0 (from -r requirements.txt (line 57))
+2017-01-24T22:04:02.57-0600 [STG/0]      OUT          Downloading pyOpenSSL-16.2.0-py2.py3-none-any.whl (43kB)
+2017-01-24T22:04:02.59-0600 [STG/0]      OUT        Collecting pyparsing==2.1.10 (from -r requirements.txt (line 58))
+2017-01-24T22:04:02.70-0600 [STG/0]      OUT          Downloading pyparsing-2.1.10-py2.py3-none-any.whl (56kB)
+2017-01-24T22:04:02.72-0600 [STG/0]      OUT        Collecting python-dateutil==2.6.0 (from -r requirements.txt (line 59))
+2017-01-24T22:04:02.75-0600 [STG/0]      OUT          Downloading python_dateutil-2.6.0-py2.py3-none-any.whl (194kB)
+2017-01-24T22:04:02.79-0600 [STG/0]      OUT        Collecting python-keystoneclient==3.9.0 (from -r requirements.txt (line 60))
+2017-01-24T22:04:02.85-0600 [STG/0]      OUT          Downloading python_keystoneclient-3.9.0-py2.py3-none-any.whl (369kB)
+2017-01-24T22:04:02.96-0600 [STG/0]      OUT        Collecting python-swiftclient==3.2.0 (from -r requirements.txt (line 61))
+2017-01-24T22:04:02.99-0600 [STG/0]      OUT          Downloading python_swiftclient-3.2.0-py2.py3-none-any.whl (72kB)
+2017-01-24T22:04:03.02-0600 [STG/0]      OUT        Collecting pytz==2016.7 (from -r requirements.txt (line 62))
+2017-01-24T22:04:03.27-0600 [STG/0]      OUT          Downloading pytz-2016.7-py2.py3-none-any.whl (480kB)
+2017-01-24T22:04:03.46-0600 [STG/0]      OUT        Collecting pyzmq==16.0.1 (from -r requirements.txt (line 63))
+2017-01-24T22:04:04.60-0600 [STG/0]      OUT        Collecting qtconsole==4.2.1 (from -r requirements.txt (line 64))
+2017-01-24T22:04:04.62-0600 [STG/0]      OUT          Downloading qtconsole-4.2.1-py2.py3-none-any.whl (104kB)
+2017-01-24T22:04:04.66-0600 [STG/0]      OUT        Collecting requests==2.12.5 (from -r requirements.txt (line 65))
+2017-01-24T22:04:04.74-0600 [STG/0]      OUT          Downloading requests-2.12.5-py2.py3-none-any.whl (576kB)
+2017-01-24T22:04:04.84-0600 [STG/0]      OUT        Collecting rfc3986==0.4.1 (from -r requirements.txt (line 66))
+2017-01-24T22:04:04.86-0600 [STG/0]      OUT          Downloading rfc3986-0.4.1-py2.py3-none-any.whl
+2017-01-24T22:04:06.06-0600 [STG/0]      OUT          Downloading scikit_learn-0.18.1-cp27-cp27m-manylinux1_x86_64.whl (11.7MB)
+2017-01-24T22:04:07.54-0600 [STG/0]      OUT        Collecting simplegeneric==0.8.1 (from -r requirements.txt (line 68))
+2017-01-24T22:04:07.55-0600 [STG/0]      OUT          Downloading simplegeneric-0.8.1.zip
+2017-01-24T22:04:07.80-0600 [STG/0]      OUT        Collecting six==1.10.0 (from -r requirements.txt (line 69))
+2017-01-24T22:04:07.83-0600 [STG/0]      OUT          Downloading six-1.10.0-py2.py3-none-any.whl
+2017-01-24T22:04:07.84-0600 [STG/0]      OUT        Collecting stevedore==1.20.0 (from -r requirements.txt (line 70))
+2017-01-24T22:04:07.89-0600 [STG/0]      OUT          Downloading stevedore-1.20.0-py2.py3-none-any.whl
+2017-01-24T22:04:07.92-0600 [STG/0]      OUT        Collecting tornado==4.4.2 (from -r requirements.txt (line 71))
+2017-01-24T22:04:07.95-0600 [STG/0]      OUT          Downloading tornado-4.4.2.tar.gz (460kB)
+2017-01-24T22:04:08.39-0600 [STG/0]      OUT        Collecting traitlets==4.3.1 (from -r requirements.txt (line 72))
+2017-01-24T22:04:08.42-0600 [STG/0]      OUT          Downloading traitlets-4.3.1-py2.py3-none-any.whl (74kB)
+2017-01-24T22:04:08.49-0600 [STG/0]      OUT          Downloading urllib3-1.20-py2.py3-none-any.whl (111kB)
+2017-01-24T22:04:08.53-0600 [STG/0]      OUT        Collecting wcwidth==0.1.7 (from -r requirements.txt (line 74))
+2017-01-24T22:04:08.57-0600 [STG/0]      OUT        Collecting widgetsnbextension==1.2.6 (from -r requirements.txt (line 76))
+2017-01-24T22:04:08.61-0600 [STG/0]      OUT          Downloading widgetsnbextension-1.2.6-py2.py3-none-any.whl (1.5MB)
+2017-01-24T22:04:08.81-0600 [STG/0]      OUT          Downloading win_unicode_console-0.5.zip
+2017-01-24T22:04:09.06-0600 [STG/0]      OUT        Collecting wrapt==1.10.8 (from -r requirements.txt (line 78))
+2017-01-24T22:04:09.09-0600 [STG/0]      OUT          Downloading wrapt-1.10.8.tar.gz
+2017-01-24T22:04:09.34-0600 [STG/0]      OUT        Collecting enum34 (from cryptography==1.7.1->-r requirements.txt (line 7))
+2017-01-24T22:04:09.37-0600 [STG/0]      OUT          Downloading enum34-1.1.6-py2-none-any.whl
+2017-01-24T22:04:09.39-0600 [STG/0]      OUT        Collecting ipaddress (from cryptography==1.7.1->-r requirements.txt (line 7))
+2017-01-24T22:04:09.41-0600 [STG/0]      OUT          Downloading ipaddress-1.0.18-py2-none-any.whl
+2017-01-24T22:04:09.43-0600 [STG/0]      OUT        Collecting funcsigs>=0.4 (from debtcollector==1.11.0->-r requirements.txt (line 9))
+2017-01-24T22:04:09.45-0600 [STG/0]      OUT          Downloading funcsigs-1.0.2-py2.py3-none-any.whl
+2017-01-24T22:04:09.47-0600 [STG/0]      OUT        Collecting configparser>=3.5 (from entrypoints==0.2.2->-r requirements.txt (line 11))
+2017-01-24T22:04:09.75-0600 [STG/0]      OUT          Downloading backports.shutil_get_terminal_size-1.0.0-py2.py3-none-any.whl
+2017-01-24T22:04:09.79-0600 [STG/0]      OUT          Downloading pexpect-4.2.1-py2.py3-none-any.whl (55kB)
+2017-01-24T22:04:09.82-0600 [STG/0]      OUT        Collecting pathlib2 (from ipython==5.1.0->-r requirements.txt (line 16))
+2017-01-24T22:04:09.85-0600 [STG/0]      OUT        Collecting functools32 (from jsonschema==2.5.1->-r requirements.txt (line 23))
+2017-01-24T22:04:09.86-0600 [STG/0]      OUT          Downloading functools32-3.2.3-2.zip
+2017-01-24T22:04:10.11-0600 [STG/0]      OUT        Collecting terminado>=0.3.3 (from notebook==4.2.3->-r requirements.txt (line 41))
+2017-01-24T22:04:10.13-0600 [STG/0]      OUT          Downloading terminado-0.6.tar.gz
+2017-01-24T22:04:10.39-0600 [STG/0]      OUT        Collecting backports.functools-lru-cache (from pylint==1.6.4->-r requirements.txt (line 56))
+2017-01-24T22:04:10.41-0600 [STG/0]      OUT          Downloading backports.functools_lru_cache-1.3-py2.py3-none-any.whl
+2017-01-24T22:04:10.43-0600 [STG/0]      OUT        Collecting futures>=3.0 (from python-swiftclient==3.2.0->-r requirements.txt (line 61))
+2017-01-24T22:04:10.45-0600 [STG/0]      OUT          Downloading futures-3.0.5-py2-none-any.whl
+2017-01-24T22:04:10.47-0600 [STG/0]      OUT        Collecting singledispatch (from tornado==4.4.2->-r requirements.txt (line 71))
+2017-01-24T22:04:10.48-0600 [STG/0]      OUT          Downloading singledispatch-3.4.0.3-py2.py3-none-any.whl
+2017-01-24T22:04:10.50-0600 [STG/0]      OUT        Collecting backports-abc>=0.4 (from tornado==4.4.2->-r requirements.txt (line 71))
+2017-01-24T22:04:10.52-0600 [STG/0]      OUT          Downloading backports_abc-0.5-py2.py3-none-any.whl
+2017-01-24T22:04:10.54-0600 [STG/0]      OUT        Collecting ptyprocess>=0.5 (from pexpect->ipython==5.1.0->-r requirements.txt (line 16))
+2017-01-24T22:04:10.55-0600 [STG/0]      OUT          Downloading ptyprocess-0.5.1-py2.py3-none-any.whl
+2017-01-24T22:04:10.57-0600 [STG/0]      OUT        Collecting scandir (from pathlib2->ipython==5.1.0->-r requirements.txt (line 16))
+2017-01-24T22:04:10.60-0600 [STG/0]      OUT          Downloading scandir-1.4.zip
+2017-01-24T22:04:10.92-0600 [STG/0]      OUT          Running setup.py install for wrapt: started
+2017-01-24T22:04:12.07-0600 [STG/0]      OUT            Running setup.py install for wrapt: finished with status 'done'
+2017-01-24T22:04:13.03-0600 [STG/0]      OUT          Running setup.py install for pycparser: started
+2017-01-24T22:04:13.55-0600 [STG/0]      OUT            Running setup.py install for pycparser: finished with status 'done'
+2017-01-24T22:04:13.91-0600 [STG/0]      OUT          Running setup.py install for cryptography: started
+2017-01-24T22:04:34.24-0600 [STG/0]      OUT            Running setup.py install for cryptography: finished with status 'done'
+2017-01-24T22:04:34.43-0600 [STG/0]      OUT          Running setup.py install for configparser: started
+2017-01-24T22:04:34.74-0600 [STG/0]      OUT            Running setup.py install for configparser: finished with status 'done'
+2017-01-24T22:04:34.75-0600 [STG/0]      OUT          Found existing installation: Jinja2 2.9.4
+2017-01-24T22:04:34.76-0600 [STG/0]      OUT            Uninstalling Jinja2-2.9.4:
+2017-01-24T22:04:34.78-0600 [STG/0]      OUT              Successfully uninstalled Jinja2-2.9.4
+2017-01-24T22:04:34.88-0600 [STG/0]      OUT          Found existing installation: Flask 0.10.1
+2017-01-24T22:04:34.92-0600 [STG/0]      OUT            Uninstalling Flask-0.10.1:
+2017-01-24T22:04:35.59-0600 [STG/0]      OUT          Running setup.py install for scandir: started
+2017-01-24T22:04:36.31-0600 [STG/0]      OUT          Running setup.py install for simplegeneric: started
+2017-01-24T22:04:36.61-0600 [STG/0]      OUT            Running setup.py install for simplegeneric: finished with status 'done'
+2017-01-24T22:04:37.67-0600 [STG/0]      OUT          Running setup.py install for tornado: started
+2017-01-24T22:04:38.49-0600 [STG/0]      OUT            Running setup.py install for tornado: finished with status 'done'
+2017-01-24T22:04:38.57-0600 [STG/0]      OUT          Running setup.py install for pyzmq: started
+2017-01-24T22:05:39.94-0600 [STG/0]      OUT            Running setup.py install for pyzmq: still running...
+2017-01-24T22:05:41.00-0600 [STG/0]      OUT            Running setup.py install for pyzmq: finished with status 'done'
+2017-01-24T22:05:41.27-0600 [STG/0]      OUT          Running setup.py install for functools32: started
+2017-01-24T22:05:41.58-0600 [STG/0]      OUT            Running setup.py install for functools32: finished with status 'done'
+2017-01-24T22:05:42.25-0600 [STG/0]      OUT            Running setup.py install for terminado: finished with status 'done'
+2017-01-24T22:05:43.71-0600 [STG/0]      OUT            Running setup.py install for positional: finished with status 'done'
+2017-01-24T22:05:47.36-0600 [STG/0]      OUT          Running setup.py install for msgpack-python: started
+2017-01-24T22:05:52.07-0600 [STG/0]      OUT          Running setup.py install for netifaces: started
+2017-01-24T22:05:55.07-0600 [STG/0]      OUT            Running setup.py install for netifaces: finished with status 'done'
+2017-01-24T22:05:55.08-0600 [STG/0]      OUT          Running setup.py install for nltk: started
+2017-01-24T22:05:56.53-0600 [STG/0]      OUT            Running setup.py install for nltk: finished with status 'done'
+2017-01-24T22:05:59.66-0600 [STG/0]      OUT          Running setup.py install for pyDes: started
+2017-01-24T22:06:00.04-0600 [STG/0]      OUT            Running setup.py install for pyDes: finished with status 'done'
+2017-01-24T22:06:03.00-0600 [STG/0]      OUT          Running setup.py install for win-unicode-console: started
+2017-01-24T22:06:03.40-0600 [STG/0]      OUT            Running setup.py install for win-unicode-console: finished with status 'done'
+2017-01-24T22:07:56.26-0600 [STG/0]      OUT Exit status 0
+2017-01-24T22:07:56.26-0600 [STG/0]      OUT Uploading droplet, build artifacts cache...
+2017-01-24T22:07:56.26-0600 [STG/0]      OUT Uploading build artifacts cache...
+2017-01-24T22:07:56.26-0600 [STG/0]      OUT Uploading droplet...
+2017-01-24T22:08:00.92-0600 [STG/0]      OUT Uploaded build artifacts cache (126.3M)
+2017-01-24T22:08:03.78-0600 [STG/0]      OUT Uploaded droplet (126.4M)
+2017-01-24T22:08:03.81-0600 [STG/0]      OUT Uploading complete
+2017-01-24T22:08:03.84-0600 [STG/0]      OUT Destroying container
+2017-01-24T22:08:07.67-0600 [CELL/0]     OUT Successfully created container
+2017-01-24T22:08:15.68-0600 [CELL/0]     OUT Starting health monitoring of container
+2017-01-24T22:08:15.79-0600 [APP/0]      ERR   File "welcome.py", line 24
+2017-01-24T22:08:15.79-0600 [APP/0]      ERR     result = conn.get_account()[1]:
+2017-01-24T22:08:15.79-0600 [APP/0]      ERR                                   ^
+2017-01-24T22:08:15.79-0600 [APP/0]      ERR SyntaxError: invalid syntax
+2017-01-24T22:08:15.79-0600 [APP/0]      OUT Exit status 1
+2017-01-24T22:08:15.83-0600 [CELL/0]     OUT Destroying container
+2017-01-24T22:08:18.78-0600 [CELL/0]     OUT Successfully destroyed container
+2017-01-24T22:09:17.33-0600 [CELL/0]     OUT Starting health monitoring of container
+2017-01-24T22:09:17.46-0600 [APP/0]      ERR                                   ^
+2017-01-24T22:09:17.46-0600 [APP/0]      ERR SyntaxError: invalid syntax
+2017-01-24T22:09:17.47-0600 [APP/0]      OUT Exit status 1
+2017-01-24T22:09:17.52-0600 [CELL/0]     OUT Destroying container
+2017-01-24T22:09:17.70-0600 [CELL/0]     OUT Creating container
+2017-01-24T22:09:20.25-0600 [CELL/0]     OUT Successfully destroyed container
+2017-01-24T22:09:21.63-0600 [CELL/0]     OUT Successfully created container
+2017-01-24T22:09:29.62-0600 [CELL/0]     OUT Starting health monitoring of container
+2017-01-24T22:09:29.73-0600 [APP/0]      ERR   File "welcome.py", line 24
+2017-01-24T22:09:29.73-0600 [APP/0]      ERR                                   ^
+2017-01-24T22:09:29.73-0600 [APP/0]      ERR SyntaxError: invalid syntax
+2017-01-24T22:09:29.73-0600 [APP/0]      OUT Exit status 1
+2017-01-24T22:09:29.75-0600 [CELL/0]     OUT Exit status 0
+2017-01-24T22:09:29.77-0600 [CELL/0]     OUT Destroying container
+2017-01-24T22:09:29.79-0600 [API/0]      OUT App instance exited with guid 4525a4d9-06ca-4ba8-bedf-4c743e7ffbee payload: {"instance"=>"", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>3, "crash_timestamp"=>1485317369765581403, "version"=>"56035443-4242-495a-bd49-b06e22f94baf"}
+2017-01-24T22:09:34.56-0600 [CELL/0]     OUT Successfully destroyed container
+2017-01-24T22:10:06.37-0600 [CELL/0]     OUT Creating container
+2017-01-24T22:10:10.01-0600 [CELL/0]     OUT Successfully created container

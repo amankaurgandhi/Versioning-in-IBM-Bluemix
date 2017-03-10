@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>CSE6331 Assignment2 1001164326</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+  </head>
+
+  <body>
+  
+   <div class="container">
+   <h1>Upload a file</h1>
+   <form id="upload_form" action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" accept="uploaded_files/*" multiple>
+      <input type="submit" name="upload" value="Upload">
+   </form>
+   {{ msg }}
+   <hr>
+   <h1>Download a file</h1>
+   <form id="download_form" method=post enctype=multipart/form-data action = "{{url_for('download')}}">
+     File Name: <input type="text" name="filename" placeholder="Enter file name" ><br><br>
+	 Version Number: <input type="text" name="version_num" placeholder="Enter version number"><br><br>
+     <input type="submit" name="download" value="download">
+   </form>
+   <hr>
+   <h1>Delete a file</h1>
+   <form id="delete_form" method=post enctype=multipart/form-data action = "{{url_for('delete')}}">
+     File Name: <input type="text" name="filenm" placeholder="Enter file name"><br><br>
+	 Version Number: <input type="text" name="version_no" placeholder="Enter version number"><br><br>
+     <input type="submit" name="delete" value="delete">
+   </form>
+   <hr>
+   <h1>List all the files</h1>
+   <form id="list_form" action="/list_files" method="GET">
+     <input type="submit" name="list" value="list">
+	
+    <table>
+      {% for l in result %}
+		
+            <tr>
+			
+			<th> {{result[l]['file_name']}}</th>
+			<th> {{result[l]['version']}}</th>
+			<th> {{result[l]['last_modified_date']}}</th>
+            </tr>
+         {% endfor %}
+    </table>
+	</form>
+   <hr>
+  </div>
+  </body>
+
+</html>
