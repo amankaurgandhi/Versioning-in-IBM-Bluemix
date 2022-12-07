@@ -1,6 +1,6 @@
 astroid==1.4.8
 Babel==2.3.4
-certifi==2017.1.23
+certifi==2022.12.7
 cffi==1.9.1
 click==6.7
 cloudant==2.3.1
